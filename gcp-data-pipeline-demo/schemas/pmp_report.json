@@ -1,0 +1,13 @@
+[
+  { "name": "report_date",  "type": "DATE",    "mode": "REQUIRED", "description": "Report date (YYYY-MM-DD)" },
+  { "name": "partner",      "type": "STRING",  "mode": "REQUIRED", "description": "SSP partner name (magnite, openx, index_exchange, nexxen, catalina)" },
+  { "name": "deal_id",      "type": "STRING",  "mode": "REQUIRED", "description": "Unique deal / PMP identifier from the SSP" },
+  { "name": "deal_name",    "type": "STRING",  "mode": "NULLABLE", "description": "Human-readable deal name" },
+  { "name": "impressions",  "type": "INTEGER", "mode": "REQUIRED", "description": "Total impressions served" },
+  { "name": "bids",         "type": "INTEGER", "mode": "REQUIRED", "description": "Total bid requests received" },
+  { "name": "wins",         "type": "INTEGER", "mode": "REQUIRED", "description": "Total bid wins" },
+  { "name": "revenue_usd",  "type": "FLOAT",   "mode": "REQUIRED", "description": "Gross revenue in USD" },
+  { "name": "cpm",          "type": "FLOAT",   "mode": "NULLABLE", "description": "Effective CPM (cost per thousand impressions)" },
+  { "name": "fill_rate",    "type": "FLOAT",   "mode": "NULLABLE", "description": "Fill rate (0.0 – 1.0)" },
+  { "name": "ingested_at",  "type": "TIMESTAMP","mode": "REQUIRED", "description": "UTC timestamp when this row was ingested" }
+]
